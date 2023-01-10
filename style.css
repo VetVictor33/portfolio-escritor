@@ -12,6 +12,10 @@ a {
     width: fit-content;
 }
 
+p {
+    padding: 0.25rem 0;
+}
+
 .body-container {
     display: flex;
     flex-direction: column;
@@ -69,6 +73,7 @@ a {
     padding: 2.6rem;
     border-radius: 90px;
     width: 200px;
+    text-align: center;
 }
 
 .footer {
@@ -84,4 +89,49 @@ a {
 .footer li:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* exclusivo sobe.html */
+.main-sobre {
+    padding: 3rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-sobre img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: solid 0.2rem aliceblue;
+    align-self: flex-end;
+    margin-right: 0.6rem;
+}
+
+.main-sobre .text-apresentacao {
+    background-color: aliceblue;
+    border-radius: 33px 13px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 6rem;
+}
+
+.main-sobre .text-apresentacao,
+.main-sobre .text-apresentacao p {
+    text-align: center;
+    padding: 1.3rem 0.5rem;
+    font-weight: 300;
+}
+
+.main-sobre .text-apresentacao a {
+    color: black;
+}
+
+.main-sobre .text-apresentacao a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }

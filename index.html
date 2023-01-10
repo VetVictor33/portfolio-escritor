@@ -7,71 +7,243 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crônicas Finitas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body class="body-container">
     <header class="menu">
         <ul class="list-menu">
-            <li class="list-item"><a href="index.html">Início</a></li>
-            <li class="list-item"><a href="sobre.html">Sobre</a></li>
-            <li class="list-item"><a href="contato.html">Contato</a></li>
+            <a href="index.html">
+                <li class="list-item">Início</li>
+            </a>
+            <a href="sobre.html">
+                <li class="list-item">Sobre</li>
+            </a>
+            <a href="contato.html">
+                <li class="list-item">Contato</li>
+            </a>
         </ul>
     </header>
     <main class="main">
         <div class="card-container">
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
-            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, atque.</div>
+            <div class="card" id="366-card" onclick="exibe('366-text')">366</div>
+            <div class=" card" id="via-expressa-card" onclick="exibe('via-expressa-text')">Via Expressa</div>
+            <div class="card" id="termina-card" onclick="exibe('terminal-text')">Terminal</div>
+            <div class="card" id="palavra-card" onclick="exibe('palavra-text')">Palavra</div>
         </div>
-        <div class="selected-text">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque illo repudiandae aperiam atque
-            cupiditate delectus voluptas odit nam illum dicta explicabo dignissimos unde magnam ipsa rerum quaerat vel
-            itaque culpa sunt, necessitatibus, impedit exercitationem nisi quo? Corporis tempore excepturi quasi
-            perspiciatis. Labore dignissimos, suscipit recusandae dolor sint at laudantium quos expedita eum eaque saepe
-            eos perspiciatis autem ullam nemo, numquam beatae doloremque facilis debitis error! Reprehenderit suscipit
-            eum autem voluptate amet corporis consectetur asperiores repellendus possimus laudantium mollitia ipsa illo
-            ab ex fugit in ea, culpa libero repudiandae fugiat reiciendis natus. Soluta ad quia fuga. Pariatur quos
-            veritatis dolores quisquam, aspernatur autem delectus. Molestiae ullam quidem obcaecati molestias nesciunt
-            officiis, aliquid ex, minus, dolorem vel alias perferendis. Unde in ullam ipsum fugiat placeat excepturi
-            nihil adipisci, quas voluptatibus tempora odit dignissimos architecto, ipsam beatae ex reprehenderit itaque
-            obcaecati, deserunt assumenda doloremque laboriosam laudantium. Explicabo, culpa sint voluptate aliquid
-            rerum repellendus nobis maxime molestias! Unde veritatis aperiam, ab porro dignissimos provident! At, nihil
-            autem. Quod nobis sunt amet est qui, quia quos. Vel, dolorum velit explicabo quo voluptate cumque earum!
-            Veniam odit dolorum, quidem saepe beatae quo animi harum, aperiam officiis, mollitia voluptates fugit
-            repellat. Hic, ipsum. Sit quibusdam consequatur voluptas nesciunt ipsam recusandae soluta animi deserunt
-            totam sapiente minima iure ut laboriosam unde provident repellendus inventore a, dolores labore ipsa quia,
-            minus voluptatibus! Ullam nostrum suscipit corporis! Facere voluptate minima voluptatum, totam ea
-            consequatur consequuntur, quia cum laudantium corrupti aliquid facilis, distinctio debitis minus vero itaque
-            amet nihil suscipit! Neque blanditiis ipsa aliquid non deleniti fuga dolor, ab commodi et cum perferendis,
-            minima atque culpa natus. In odit magni, ipsam quos ullam est sunt dolore pariatur nostrum consequuntur
-            dolorum quis fugit sint! Eius quaerat et voluptatibus velit nesciunt unde tempora quia dicta dolores, itaque
-            ratione alias harum laborum distinctio eveniet minus deleniti culpa architecto dignissimos? Dolores illo
-            eius voluptatem exercitationem sequi, aliquam asperiores repellat. Eius, reiciendis dolores placeat adipisci
-            consequuntur et sapiente, veritatis maxime harum doloremque blanditiis, expedita natus fugiat porro
-            molestiae voluptatibus quae? Consequatur autem rerum tempora perspiciatis ad voluptatum! Temporibus,
-            dignissimos. Hic, voluptas cupiditate? Inventore, assumenda recusandae accusantium impedit animi maxime
-            officiis. Facere, sunt quis earum recusandae ullam repellat laborum minima repellendus mollitia iste
-            sapiente eveniet debitis nihil modi, tenetur quae, perferendis explicabo ut cumque. Impedit numquam fugiat
-            incidunt laudantium consectetur reiciendis dolores molestiae eveniet cumque asperiores, provident, autem
-            unde tempora quam perspiciatis harum quae sit repellendus aut molestias. Aperiam libero consequatur unde a
-            distinctio, fugit itaque totam reiciendis commodi laboriosam illum quo rem quisquam amet ipsa pariatur? Quis
-            necessitatibus animi sequi placeat quasi dolorum deserunt earum aliquid doloribus eius harum dolore, nostrum
-            modi exercitationem assumenda at a excepturi blanditiis atque officiis magnam! Architecto eum non fuga dolor
-            aut, quae, minima minus sed commodi quaerat veritatis quia animi officiis nam voluptas? Expedita, fugiat
-            numquam. Sunt quisquam libero accusantium nisi ratione deserunt neque iste omnis consectetur magni, eos
-            ipsam aperiam quidem vitae provident aliquam hic ducimus, harum dolor? Quisquam quam aspernatur ad
-            praesentium minima repudiandae animi possimus commodi ipsum!
+        <div class="selected-text hidden" id="366-text">
+            <h1>366</h1>
+            <p>Já passa da meia noite. Hoje consegui pegar o último ônibus direto para casa, sorte. Não fosse o 366… a
+                essa hora só pegando Uber, ou dormindo no trabalho. Seria no mínimo uns 50 reais, teria pagado para
+                trabalhar hoje.</p>
+
+            <p>Ainda vou andar 20 minutos para chegar em casa. No caminho as marcas da inacabável obra do BRT, lixo e
+                entulho me fazem andar em zigue-zague. Ratos e baratas mortos boiando na lama. Não é lama de chuva, esse
+                mês ainda não caiu uma gota, a água empoçada deve ser do vazamento sem fim de algum gato. Na estação
+                abandonada encontro um morador de rua sentado em seus trapos.</p>
+
+            <p>-Ei, chefe! Me arruma um cigarro, aí?</p>
+
+            <p>Eu ponho a mão no bolso. Acabei de acender o penúltimo. Não gosto de dividir meus cigarros com estranhos,
+                ainda mais com mendigos. Por um instante, olho para sua mão estendida, estava tomada por sujeira preta e
+                grossa. Ele todo parecia coberto por uma camada de imundice. O homem nada tem exceto por seus trapos.
+            </p>
+
+            <p>-Pega aí.</p>
+
+            <p>Jogo o maço com o último cigarro. Ele abre um sorriso que cobre metade de seu rosto, seu semblante é
+                tomado por uma paz por alguns instantes. Ele caça o Lucky Strike restante na embalagem amassada e o põe
+                entre seus lábios rachados. Seus olhos se voltam para mim e sei o que me pedem. Aproximo-me e acendo seu
+                cigarro com meu isqueiro a gás.</p>
+
+            <p>-Deus lhe abençoe, meu irmão.</p>
+
+            <p>Apenas balanço a cabeça e sigo meu rumo. Aperto o passo, porque ainda preciso tomar banho e jantar. Essas
+                reuniões sempre acabam tarde e sem chegar a lugar algum. Já são duas semanas dormindo 4 horas por noite,
+                hoje só me deito às duas da manhã.</p>
+
+            <p>Chego em casa em silêncio, todos já estão dormindo. Faço o que tenho que fazer e despenco na cama. Acordo
+                com o sol na cara e o coração acelerado. O celular com a tela preta, descarregado. Quando o coloco na
+                tomada, uma enxurrada de mensagens cobre a aba de notificação. Abro o WhatsApp. No topo do aplicativo
+                está o grupo do trabalho, a última mensagem dizendo que fui removido. Logo abaixo está o contato do meu
+                chefe, a foto de sua cara sorridente com a esposa não aparece mais.</p>
+
+            <p>Tiro o celular da tomada e me deito novamente. Fico surpreso por estar sorrindo e por um instante me
+                lembro do velho de ontem.</p>
+
+
+
+        </div>
+        <div class="selected-text hidden" id="via-expressa-text">
+            <h1>Via Expressa</h1>
+
+            <p>Saio de casa por volta das seis da manhã, como de costume. A noite foi chuvosa, o asfalto e o vidro dos
+                carros estão cobertos por uma fina camada de umidade. Evito as poças no caminho até minha YBR 125. Mesmo
+                sob uma marquise na calçada, a magrela está molhada por causa do sereno. Seco seu banco de couro surrado
+                com a manga do meu casado e subo na moto. O tanque está próximo a reserva, mas deve aguentar mais dois
+                dias. Tem que aguentar, porque já estou no cheque especial e o dinheiro na minha carteira só dá para um
+                arrego.</p>
+            <p>O caminho de sempre é tranquilo, entre ultrapassagens e corredores passo pela Avenida Brasil e entro na
+                Linha Amarela. Aqui é sempre mais tenso, não costuma ter assalto, mas tiroteios e acidentes são comuns.
+                Principalmente acidente em dia chuvoso como hoje. Meu coração acelera, quase saindo pela boca quando
+                faço a curva da entrada 9. A moto samba pelo menos três vezes até que consigo equilibrá-la novamente,
+                evitando uma queda entre alguns carros e um ônibus. Tem algumas semanas que percebi o pneu careca, mas
+                preciso receber o salário desse mês para trocá-lo, ainda é dia 7.</p>
+            <p>Foi na praça do pedágio que o pneu careca dá o ar da graça novamente. Não costumo precisar parar por
+                aqui, tem algum tempo que as motos são isentas, no entanto, por algum motivo os motoqueiros haviam
+                parado. Percebo a tempo de frear, só que o pneu desliza na parte do asfalto que é pintada para
+                sinalização. Dessa vez eu vou para o chão. Não foi uma queda feia, já tive piores. Os motoqueiros me
+                ajudam a levantar e me entregam a motoca de pé.</p>
+            <p>-Deu mole, tio.</p>
+            <p>O homem que me entrega a moto estava com um colete refletor e uma mochila térmica vermelha nas costas,
+                era um entregador de aplicativo.</p>
+            <p>-Pneu careca, mano.</p>
+            <p>Ele olha para mim com os olhos fixos e assente, como quem achasse a desculpa plausível. Quando o motoboy
+                volta para sua moto, vejo que a logo na mochila está coberta por uma série de adesivos, um deles é preto
+                e ilustra um ciclista entregador com a mão direita empunhada em direção ao céu.</p>
+            <p>Só é ao fim via expressa, quando a baixa rotação do motor diminui o ruído em meus ouvidos, que percebo um
+                barulho de metal batendo na traseira da moto. Encosto próximo ao ponto de ônibus e verifico a placa
+                pendurada. <em>Início do mês, mais um gasto</em>, penso em voz alta. Faço uma gambiarra com um cadarço
+                velho que sempre deixo na mochila e sigo meu caminho, que ainda é longo.</p>
+            <p>Sim senhor, não senhor. O trabalho foi um saco, como de costume. <em>Eles são gente, mas não são gente
+                    como a gente</em>, já dizia o Chorão. Abro o aplicativo antes de subir na moto: sem blitz no
+                caminho. O dia foi abençoado com um belo sol, e esse fim de tarde pelo seu descanso. É de novo na
+                entrada da Linha Amarela que meu coração acelera novamente, dessa vez não é por causa do meu pneu, ou
+                melhor, também é. Duas viaturas da PM e um reboque lotado de motos são a bandeira vermelha. Reduzo a
+                velocidade e passo lentamente entre os policiais, encaro-os de maneira singela a procura de um sinal,
+                mas esperando não o receber. É o quarto homem de farda que balança a cabeça e estende o braço para que
+                eu encoste. <em>Fodeu</em>.</p>
+            <p>-Documentos do veículo e do condutor, por gentileza.</p>
+            <p>Levanto-me da moto, sem descer, para retirar minha carteira do bolso de trás. Caço meus documentos entre
+                fotos e algumas notas. Então todos em dia, não é isso que me preocupa. Entrego os papéis sem uma
+                palavra. O homem vai até um de seus colegas e confere os documentos enquanto diz algo inaudível àquela
+                distância, consigo apenas entender a última palavra, <em>vai lá</em>, antes que o outro policial se
+                desloque até mim.</p>
+            <p>-Placa quebrada, pneu careca… o negócio tá ruim pro teu lado, parceiro.</p>
+            <p><em>Parceiro…</em></p>
+            <p>-Desce do veículo, por gentileza. Vamos ter que levar a sua moto.</p>
+            <p>Um terceiro policial, este mais velho e de bigode, se aproxima e devolve meus documentos. O homem que
+                conversava comigo o olha surpreso por alguns instantes e vai embora em silêncio.</p>
+            <p>-Não tem como a gente deixar passar dessa vez, irmão?</p>
+            <p>Tento negociar, inutilmente apelando para as dificuldades financeiras e as malezas do trabalhador
+                brasileiro.</p>
+            <p>-Nem se eu quisesse poderia te ajudar. Sua moto vai ser rebocada junto com mais umas trinta, sabe quanta
+                história triste eu ouvi hoje?! Já tá vindo um novo reboque… Elas vão pro depósito de Campo Grande.</p>
+            <p>Sem me dar espaço para nem mais uma palavra ele vira as costas e vai abordar outro motoqueiro. Conformado
+                com minha desgraça, passo a caminhar em direção ao ponto de ônibus a uns 400 metros, fazendo as contas
+                de quanto vai me custar recuperar minha moto.</p>
+            <p>-Vai pra onde, mano?</p>
+            <p>Quem me aborda é um dos motoqueiros que também foi parado, porém não teve sua moto carregada.</p>
+            <p>-Central.</p>
+            <p><em>Sobe aí</em>, ele me convida. Vou de carona até bem próximo de casa. É estranho ser o passageiro,
+                estar na garupa, é estranho não ter o controle, o jeito que a moto me surpreende ao inclinar nas curvas
+                e ao desviar de outros carros, me permitindo apenas ceder ao seu balançar.</p>
+
+        </div>
+        <div class="selected-text hidden" id="terminal-text">
+            <h1>Terminal</h1>
+            <p>Um ônibus municipal no Rio de Janeiro costuma ter uns 35 assentos. A placa perto da entrada sob o
+                para-brisa diz que o veículo suporta mais uns 30 passageiro de pé. O carioca médio conhece essa lenda
+                urbana, um pouco irônica, um pouco revoltante. Hoje foi um domingo ensolarado típico do verão desta
+                cidade, isso significa que a lotação do 315 será posta a prova novamente. Eu só agradeço por subir no
+                terminal.</p>
+            <p>Faltando dez minutos para as 18 horas e o ônibus inicia sua rota. Além de mim, pelo menos de 10 pessoas
+                estão sentadas nas janelas, nenhuma cadeira do corredor ocupada. Sentei-me próximo a catraca, era uma
+                das últimas fileiras desocupadas na frente.</p>
+            <p>-ARROMBADO!</p>
+            <p>Antes de chegar na praia do Recreio o motorista tenta avançar um sinal vermelho e é xingado por um
+                motoqueiro. Sorte de um homem que se aproxima pela calçada, pondo-se a bater na lateral do ônibus até
+                que o motorista abra a porta.</p>
+            <p>-Quase, hein!</p>
+            <p>O motorista vira para o homem que sobe. Fico sem saber ao qual dos eventos se refere: ao quase acidente
+                ou ao novo passageiro. O homem o ignora e passa pela catraca com seu RioCard. Mais alguns metros entre
+                os solavancos das freadas e aceleradas causadas pelo trânsito típico do fim de tarde e chegamos ao
+                primeiro ponto dos banhistas. A comoção é grande. Ao menos quinze pessoas se concentram na porta de
+                embarque, algumas com coolers na mão, outras com cadeiras de praia. Entre o ruído da pequena multidão
+                escuto alguém pedindo para subir pela porta de trás. Ao menos cinco pessoas passam direto por mim até
+                que uma mulher de tanga se senta ao meu lado. Ela não olha para mim, mas eu a encaro por alguns
+                instantes, até que, com um suspiro, desisto de coagi-la a descolar seu braço do meu e sigo observando o
+                lado de fora.</p>
+            <p>-Água, água, água… água é dois!</p>
+            <p>O camelô se espreme entre os passageiros e cruza o corredor anunciando seu produto. As gotas das garrafas
+                recém retiradas do gelo caem no chão e se misturam com a areia da praia trazida pelos banhistas. Olho
+                para trás na esperança de comprar algo para comer, mas ele só aparenta vender a bebida. Noto que o
+                ônibus já tem todos seus assentos ocupados, inclusive o espaço para cadeirante, perto da porta de
+                desembarque. Nesse canto, onde ficaria a cadeira de rodas, um amontoado de sacolas pretas,
+                churrasqueiras improvisadas e coolers preenchem todo o espaço reservado. Retorno para a minha posição e
+                sigo a olhar pela janela.</p>
+            <p>Demorou ao menos 20 minutos para sair da praia, o ônibus já repleto de cariocas. A essa altura um leigo
+                pensaria que não cabe mais ninguém. Ingenuidade. Nas paradas seguinte, o motorista desiste de cobrar
+                algumas passagens e abre a porta de trás para que os passageiros subam pelo desembarque. Demorei alguns
+                anos para descobrir que algumas empresas descontavam do salário do motorista por essa transgressão.</p>
+            <p>Já estávamos na Barra quando começou a chover. Uma chuva torrencial, daquelas de vento, que molham dentro
+                de casa. Tento lembrar se tirei a roupa do varal. Os passageiros da janela, temendo a água, protegem-se
+                fechando os vidros aos seus lados. Poucos minutos depois e o motorista precisa passar uma flanela no
+                para-brisa embaçado. O ônibus tem ar-condicionado, mas ele permanece desligado desde a pandemia do ano
+                retrasado: protocolos de segurança, sabe como é. Depois de meia hora, algumas trocas de passageiros e
+                muita chuva, o ar começa a pesar e o calor fica insuportável. Se algum passageiro utilizava máscara
+                facial, certamente àquela altura já desistira da proteção. Logo me arrependo de não ter comprado a água.
+            </p>
+            <p>Pouco antes da linha amarela, próximo ao antigo Barra Music, o ônibus quebra. <em>Ah, meu Rio de
+                    Janeiro</em>. São lá para as 19 horas, quando pelo menos 70 pessoas desceram do 315 com as luzes
+                apagadas. Ao menos aqui tem outras opções para a Central. Os ponteiros do meu relógio de pulso dão
+                voltas, ônibus lotados passam direto, alguns com o letreiro apagado, outros param lotados e assim ficam
+                até que o motorista desista e siga viagem, passageiros sobem e descem, o ponto vai ficando vazio. São
+                21h quando para um Central que não parece um carro de boi. Subo junto com outros passageiros, ando até o
+                fundo da condução, me apoio em uma das barras e sigo o restante da viagem em pé.</p>
+            <p>A chuva lá fora deu trégua, o que me permite acreditar que dessa vez a rua lá de casa não vai alagar. Sem
+                o característico gotejar no teto do veículo finalmente me dou conta do silêncio que paira no ar. Sem som
+                de buzina, de motor velho, de discussão, nada. Apenas o gotejar do ar-condicionado quebrado no único
+                assento livre.</p>
+        </div>
+        <div class="selected-text hidden" id="palavra-text">
+            <h1>Palavra</h1>
+            <p>Palavra, frase, parágrafo. Palavra frase, parágrafo. Palavra, frase, parágrafo.</p>
+            <p>Frente à máquina de escrever do seu tempo, seu papiro. Escreve, joga fora. Escreve, apaga. Escreve,
+                deleta. Sua mente é como um baú no qual todos os brinquedos já foram retirados e nada resta, além de
+                colocá-los de volta para brincar um outro dia, quando eles se tornarem algo menos entediante.</p>
+            <p>-Acabaram as ideias, hum?</p>
+            <p>Ele dá um salto da cadeira. Deve estar enlouquecendo. Teria ele realmente ouvido aquelas palavras?! Ou
+                talvez esse seja o efeito das doses extras de cachaça que resolveu tomar hoje, em busca de inspiração?
+                Não… embriaguez não faz esse tipo de coisa.</p>
+            <p>-Quem disse isso?</p>
+            <p>-Eu Carlos, eu.</p>
+            <p>-E quem seria você?</p>
+            <p>-Sua mente, lhe pregando peças. Fazendo você conversar com sua máquina de escrever.</p>
+            <p>Carlos pega sua garrafa de cachaça e enche seu copo, dessa vez ignorando o limão e bebendo em um só gole.
+                O escritor olha para suas mãos, enrugadas pela velhice e trêmulas pelo álcool em seu sangue. Ele
+                suspira.</p>
+            <p>-O que você quer?</p>
+            <p>-Ora! O que eu quero… o mesmo que você, tolo: uma história. Veja, eu sou uma máquina de escrever, se você
+                não escreve alguma coisa comigo, sou apenas uma máquina. Não quero ser apenas uma máquina. E quem quer
+                ser apenas uma máquina?! Uma coisa de pouco valor como a que você usou para transformar a água nesse
+                gelo, ou a outra que usaram para transformar cana no líquido que entorpece a sua mente e livra a sua
+                alma, e essa bela e tradicional garrafa de cachaça, ornada com tranças de palha… Bom, essa deve ser uma
+                máquina mais interessante. Mas, enfim, faça o seu trabalho e escreva.</p>
+            <p>-Humpf… e o que pensas que eu estava tentando fazer?! Estava criando uma história… até que as teclas se
+                espaçaram e transformaram-se em sua boca e seus olhos, e a tinta virou sua língua, e o papel seu…
+                cabelo. Como vou escrever assim?</p>
+            <p>-Não posso ir embora, não ainda. Você não tem uma história.</p>
+            <p>-Tenho sim… eu estava escrevendo sobre um cientista que dá vida a uma criatura antes sem vida.</p>
+            <p>-O Monstro de Frankenstein?</p>
+            <p>-Não, não… é outra totalmente diferente. Mas não é a única ideia. Veja, tenho essa história que vai
+                vender centenas de cópias. É sobre um monstro marinho que é invocado por um culto sombrio e…</p>
+            <p>-…e você agora se chama H.P. Carlos?</p>
+            <p>-Droga! Droga! Droga!</p>
+            <p>Cada lamento é acompanhando de uma batida na escrivaninha com o punho serrado. Até que sua sagrada
+                garrafa, vítima de sua ira, tomba e quebra em cacos, esparramando todo o seu conteúdo no carpete marrom.
+                O escritor observa com atenção o líquido escorrer dos restos do recipiente e umedecer todo o tecido.</p>
+            <p>-Não tenho mais nenhuma ideia… Por que você não me…</p>
+            <p>Lamentando, ele torna para sua máquina de escrever, que voltou a ser apenas um objeto inanimado. Carlos
+                reposiciona sua cadeira próxima a escrivaninha: ele tem uma história. Finalmente.</p>
+            <p><em>Palavra, frase, parágrafo. Palavra, frase, parágrafo. Palavra, frase, parágrafo.</em></p>
         </div>
     </main>
 </body>
 <footer class="footer-container footer">
     <ul class="list-footer">
-        <li class="list-item"><a>LinkedIn</a></li>
-        <li class="list-item"><a>GitHub</a></li>
+        <li class="list-item"><a href="https://www.linkedin.com/in/victorjfeliciano/">LinkedIn</a></li>
+        <li class="list-item"><a href="https://github.com/VetVictor33">GitHub</a></li>
     </ul>
 </footer>
 
