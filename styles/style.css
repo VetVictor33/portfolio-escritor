@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+}
+
+p {
+    padding: 0.25rem 0;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #70A9A1;
+}
+
+.menu {
+    background-color: rgb(11, 32, 39);
+    color: aliceblue;
+}
+
+.menu h1,
+p {
+    margin: 13px auto;
+    background-color: rgba(240, 248, 255, 0.308);
+    padding: 6px 16px;
+    border-radius: 10px;
+}
+
+.menu p {
+    text-align: end;
+    padding-left: 30px;
+}
+
+.nav-menu {
+    text-align: center;
+    background-color: rgb(11, 32, 39);
+    padding: 0.6rem 2rem 1.6rem;
+}
+
+.menu .list-item {
+    display: inline-block;
+    padding: 0.6rem 2.3rem;
+    background-color: rgba(64, 121, 140, 0.3);
+    text-align: center;
+    border-radius: 100px 0 100px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .list-item:hover,
+.card:hover {
+    border: solid #40798C 2px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(11, 32, 39);
+    text-align: center;
+    padding: 1.3rem;
+}
+
+.footer li {
+    padding: 0.3rem;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}

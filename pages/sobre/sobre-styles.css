@@ -1,0 +1,49 @@
+body {}
+
+.main-sobre {
+    padding: 3rem 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px gray solid;
+    margin: 200px 10px 0 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-sobre img {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    border: solid 0.2rem aliceblue;
+    align-self: flex-end;
+    margin-right: 0.6rem;
+}
+
+.main-sobre .text-apresentacao {
+    background-color: aliceblue;
+    border-radius: 33px 13px;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1.6rem;
+    border: 1px aliceblue solid;
+}
+
+.main-sobre .text-apresentacao,
+.main-sobre .text-apresentacao p {
+    text-align: center;
+    padding: 1.3rem 0.5rem;
+    font-weight: 300;
+}
+
+.main-sobre .text-apresentacao a {
+    color: black;
+}
+
+.main-sobre .text-apresentacao a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 400px;
+}

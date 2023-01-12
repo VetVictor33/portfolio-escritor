@@ -1,0 +1,43 @@
+.placeholder {
+    text-align: center;
+}
+
+.main .selected-text {
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding: 1.6rem;
+    margin: 0.3rem;
+}
+
+.main .selected-text h1 {
+    background-color: rgba(64, 121, 140, 0.3);
+    border-radius: 10px 0;
+    text-align: center;
+    padding: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 2.6rem;
+    border-radius: 90px;
+    width: 200px;
+    text-align: center;
+}
+
+.cats-img {
+    height: 360px;
+    width: 460px;
+    display: block;
+    margin: 100px auto;
+    border-radius: 130px 20px;
+    border: dotted 2px #000;
+}

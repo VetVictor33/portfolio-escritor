@@ -6,32 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crônicas Finitas</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="index-styles.css">
+    <script src="../../scripts/script.js"></script>
 </head>
 
 <body class="body-container">
     <header class="menu">
-        <ul class="list-menu">
-            <a href="index.html">
-                <li class="list-item">Início</li>
-            </a>
-            <a href="sobre.html">
-                <li class="list-item">Sobre</li>
-            </a>
-            <a href="contato.html">
-                <li class="list-item">Contato</li>
-            </a>
-        </ul>
+        <h1>Crônicas Finitas</h1>
+        <p class="placeholder">Crônicas que um dia foram escritas, porém, nunca antes na história da humanidade...</p>
+        <nav class="nav-menu">
+            <ul class="list-menu">
+                <a href="index.html">
+                    <li class="list-item">Início</li>
+                </a>
+                <a href="../sobre/sobre.html">
+                    <li class="list-item">Sobre</li>
+                </a>
+                <a href="../contato/contato.html">
+                    <li class="list-item">Contato</li>
+                </a>
+            </ul>
+        </nav>
     </header>
     <main class="main">
-        <div class="card-container">
+        <nav class="card-container">
             <div class="card" id="366-card" onclick="exibe('366-text')">366</div>
             <div class=" card" id="via-expressa-card" onclick="exibe('via-expressa-text')">Via Expressa</div>
             <div class="card" id="termina-card" onclick="exibe('terminal-text')">Terminal</div>
             <div class="card" id="palavra-card" onclick="exibe('palavra-text')">Palavra</div>
-        </div>
-        <div class="selected-text hidden" id="366-text">
+        </nav>
+        <article class="selected-text">
+            <h1>Crônicas & Contos</h1>
+            <p class="placeholder">Selecione uma título no menu acima para exibir o conteúdo.</p>
+            <img class="cats-img" src="../../assets/catinhos.jpeg" alt="dois gatos dando joinha">
+        </article>
+        <article class="selected-text hidden" id="366-text">
             <h1>366</h1>
             <p>Já passa da meia noite. Hoje consegui pegar o último ônibus direto para casa, sorte. Não fosse o 366… a
                 essa hora só pegando Uber, ou dormindo no trabalho. Seria no mínimo uns 50 reais, teria pagado para
@@ -73,8 +83,8 @@
 
 
 
-        </div>
-        <div class="selected-text hidden" id="via-expressa-text">
+        </article>
+        <article class="selected-text hidden" id="via-expressa-text">
             <h1>Via Expressa</h1>
 
             <p>Saio de casa por volta das seis da manhã, como de costume. A noite foi chuvosa, o asfalto e o vidro dos
@@ -139,8 +149,8 @@
                 estar na garupa, é estranho não ter o controle, o jeito que a moto me surpreende ao inclinar nas curvas
                 e ao desviar de outros carros, me permitindo apenas ceder ao seu balançar.</p>
 
-        </div>
-        <div class="selected-text hidden" id="terminal-text">
+        </article>
+        <article class="selected-text hidden" id="terminal-text">
             <h1>Terminal</h1>
             <p>Um ônibus municipal no Rio de Janeiro costuma ter uns 35 assentos. A placa perto da entrada sob o
                 para-brisa diz que o veículo suporta mais uns 30 passageiro de pé. O carioca médio conhece essa lenda
@@ -195,8 +205,8 @@
                 o característico gotejar no teto do veículo finalmente me dou conta do silêncio que paira no ar. Sem som
                 de buzina, de motor velho, de discussão, nada. Apenas o gotejar do ar-condicionado quebrado no único
                 assento livre.</p>
-        </div>
-        <div class="selected-text hidden" id="palavra-text">
+        </article>
+        <article class="selected-text hidden" id="palavra-text">
             <h1>Palavra</h1>
             <p>Palavra, frase, parágrafo. Palavra frase, parágrafo. Palavra, frase, parágrafo.</p>
             <p>Frente à máquina de escrever do seu tempo, seu papiro. Escreve, joga fora. Escreve, apaga. Escreve,
@@ -237,7 +247,7 @@
             <p>Lamentando, ele torna para sua máquina de escrever, que voltou a ser apenas um objeto inanimado. Carlos
                 reposiciona sua cadeira próxima a escrivaninha: ele tem uma história. Finalmente.</p>
             <p><em>Palavra, frase, parágrafo. Palavra, frase, parágrafo. Palavra, frase, parágrafo.</em></p>
-        </div>
+        </article>
     </main>
 </body>
 <footer class="footer-container footer">

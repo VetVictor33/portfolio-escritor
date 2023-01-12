@@ -1,0 +1,11 @@
+main h1,
+p {
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin: 60px auto;
+    border-radius: 30px;
+    border: solid 3px black;
+}
